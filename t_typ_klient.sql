@@ -1,4 +1,4 @@
-USE [komis20]
+USE [komis]
 GO
 
 /****** Object:  Trigger [dbo].[typ_klient]    Script Date: 05.06.2018 11:07:19 ******/
