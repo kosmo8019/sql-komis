@@ -1,3 +1,13 @@
+USE [komis20]
+GO
+
+/****** Object:  Trigger [dbo].[typ_klient]    Script Date: 05.06.2018 11:07:19 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
 
 
 
@@ -26,3 +36,9 @@ BEGIN
 			raiserror ('b³edny typ klienta',16,1)
 			rollback transaction
 end
+GO
+
+ALTER TABLE [dbo].[klient] ENABLE TRIGGER [typ_klient]
+GO
+
+
